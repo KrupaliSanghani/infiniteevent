@@ -1,0 +1,93 @@
+.footer-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.footer {
+    background: var(--primary-black-lightest);
+    color: var(--primary-white);
+}
+
+.footer-top {
+    padding: 24px 0 64px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer-content {
+    margin-top: 38px;
+}
+
+.footer-content h4 {
+    font-size: 18px;
+    color: var(--primary-white);
+    margin-bottom: 11px;
+    font-weight: 400;
+}
+
+.footer-link-list li {
+    display: block;
+    line-height: 32px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, .8);
+}
+
+.footer-content>.social-links {
+    margin-top: 21px;
+}
+
+.footer-content>.social-links>li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-content>.social-links li>.social-link {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border: 2px solid rgba(255, 255, 255, .7);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 39px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer-content>.social-links li>.social-link:hover {
+    color: var(--primary-white) !important;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.download-app-link {
+    display: inline-block;
+    height: 38px;
+    margin-top: 12px;
+}
+
+.download-btn {
+    transition: all 0.12s ease-in-out 0s;
+    text-decoration: none;
+    margin-right: 7px;
+    vertical-align: inherit;
+}
+
+.download-btn img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 0.12s ease-in-out 0s;
+    opacity: 1;
+}
+
+.footer-copyright-text {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-copyright-text p {
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: 0.3px;
+}

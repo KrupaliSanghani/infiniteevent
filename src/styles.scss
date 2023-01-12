@@ -1,1 +1,280 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/css/variable.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+    color: var(--primary-gray-dark);
+    background-color: var(--primary-white) !important;
+}
+
+::selection {
+    background-color: var(--primary-blue-light);
+    color: rgba(0, 0, 0, .87);
+}
+
+a:hover {
+    color: var(--primary-blue) !important;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14px;
+}
+
+nav,
+nav ul li a,
+nav ul li:hover>ul {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.btn-hover:hover {
+    color: var(--primary-white) !important;
+    background: var(--primary-green-light);
+    border: 1px solid var(--primary-green-light);
+}
+
+button {
+    outline: none;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--primary-gray);
+    letter-spacing: 0.1px;
+}
+
+// for carouse
+.owl-theme .owl-dots .owl-dot span {
+    background: var(--primary-white-dark) !important;
+}
+
+.owl-nav .owl-prev {
+    left: -20px;
+    font-size: 20px !important;
+    position: absolute;
+    top: 45%;
+    padding: 0 !important;
+    text-align: center;
+    height: 30px !important;
+    width: 30px !important;
+    color: var(--primary-gray) !important;
+    background: var(--primary-white) !important;
+    border-radius: 3px !important;
+    border: 1px solid var(--primary-white-dark) !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.owl-nav .owl-next {
+    font-size: 20px !important;
+    position: absolute;
+    right: -20px;
+    top: 45%;
+    padding: 0 !important;
+    text-align: center;
+    height: 30px !important;
+    width: 30px !important;
+    color: var(--primary-gray) !important;
+    background: var(--primary-white) !important;
+    border-radius: 3px !important;
+    border: 1px solid var(--primary-white-dark) !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-nav .owl-next {
+    right: 0;
+}
+
+.owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover {
+    color: var(--primary-white) !important;
+    opacity: 1;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--primary-color) !important;
+}
+
+@media (min-width: 43.75em) {
+    h1 {
+        font-size: 2.5em;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125;
+        color: var(--primary-black);
+    }
+
+    h2 {
+        font-size: 2em;
+        /* 2x body copy size = 32px */
+        line-height: 1.25;
+        color: var(--primary-black);
+    }
+
+    h3 {
+        font-size: 1.5em;
+        /* 1.5x body copy size = 24px */
+        line-height: 1.25;
+        color: var(--primary-black);
+    }
+
+    h4 {
+        line-height: 1.22222222;
+        /* (22px / 18px */
+        color: var(--primary-black);
+    }
+
+    blockquote {
+        font-size: 1.5em;
+        /* 24px / 16px = */
+        line-height: 1.45833333;
+        /* 35px / 24px */
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        overflow-y: scroll;
+    }
+}
+
+@media(min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1270px !important;
+    }
+}

@@ -30,9 +30,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css",
+              "src/assets/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/OwlCarousel/assets/owl.theme.default.min.css",
+              "src/assets/vendor/OwlCarousel/assets/owl.carousel.css",
+              "src/assets/vendor/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery-3.6.0.min.js",
+              "src/assets/vendor/OwlCarousel/owl.carousel.js",
+              "src/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js",
+              "src/assets/vendor/mixitup/dist/mixitup.min.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/night-mode.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,5 +115,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "513b3def-ede2-410e-98c1-5c2eefdd1cc2"
   }
 }
